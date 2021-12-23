@@ -1,0 +1,24 @@
+Zarek Lazowski
+
+USER INFO:
+Trace examines .pcap files and prints out useful data found inside the pcap
+file. This is done by reading in the next packet and extracting the information
+from the relevant headers, as well as the data within. 
+
+This was created in a virtual Ubuntu x86 environment, and is not intended
+to run outside of a unix-based system.
+
+INSTRUCTIONS:
+The provided makefile creates trace with a suffix describing the OS the program
+was built on. 
+
+The program expects to be run with one argument, the name of the pcap file to
+inspect.
+
+The program will print out usage on an incorrect call. 
+
+OTHER THOUGHTS:
+I'm not particularly happy with my implementation of this. If I could do it
+over, I would get all the headers in one spot and then print everything out.
+This would save calls to malloc and free as well, which is my main reason
+for wanting to do this over.
